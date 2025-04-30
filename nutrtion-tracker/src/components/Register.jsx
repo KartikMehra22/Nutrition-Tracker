@@ -1,0 +1,39 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
+export default function Register(){
+
+    const [userDetails,setUserDetails]=useState({
+        name:"",
+        email:"",
+        password:"",
+        age:""
+
+    })
+
+    function handleInput(event){
+        setUserDetails((prevState)=>{
+            return {...prevState,[event.target.name]:event.target.value};
+        })
+    }
+
+    function handleSubmit(event){
+
+        event.preventDefault();
+        console.log(userDetails)
+    }
+
+    return (
+        <section className='container'>
+            <form className="form" onChange={handleSubmit}>
+                <h1>Start Your Fitness</h1>
+                <input className="inp" type="text" required onChange={handleInput} placeholder="Enter Name" name="name" value={userDetails.name}/>
+                <input className="inp" type="email" required onChange={handleInput} placeholder="Enter Email" name="email" value={userDetails.email}/>
+                <input className="inp" type="password" required maxLength={8} onChange={handleInput} placeholder="Enter Password" name="password" value={userDetails.password}/>
+                <input className="inp" type="number" max={100} min={12} onChange={handleInput} placeholder="Enter Age" name="age" value={userDetails.age}/>
+                <button className="btn">Join</button>
+                <p>Alerady Registered ? <Link to='/login'>Login</Link></p>
+            </form>
+
+        </section>
+    )
+}
