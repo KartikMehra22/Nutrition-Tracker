@@ -7,6 +7,7 @@ import Track from './components/Track'
 import React from "react"
 
 import Header from './components/header'
+import UserDashboard from './components/user'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     
     <BrowserRouter>
     <Header/>
+
     <Routes>
       <Route path='/' element={<Login/>}/>
       <Route path='/login' element={<Login/>}/>

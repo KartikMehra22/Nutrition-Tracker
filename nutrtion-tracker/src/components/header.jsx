@@ -6,14 +6,14 @@ return (
 <header className="header">
     <div className="container">
     <div className="logo">
-        <Link href="/">
+        <Link to="/">
         <span className="logoText">Nutrify</span>
         </Link>
     </div>
     <nav className="nav">
         <ul className="navList">
         <li className="navItem">
-            <Link to="/" className={`$"navLink" $"active"`}>
+            <Link to="/" className="navLink">
             Home
             </Link>
         </li>
@@ -33,7 +33,7 @@ return (
             </Link>
         </li>
         </ul>
-        <p><Link to="/header">Header</Link></p>
+
     </nav>
     </div>
 </header>
