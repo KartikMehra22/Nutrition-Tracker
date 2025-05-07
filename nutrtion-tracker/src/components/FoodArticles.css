@@ -1,0 +1,82 @@
+.food-article {
+border: 1px solid #e0e0e0;
+border-radius: 15px;
+overflow: hidden;
+background-color: white;
+margin-bottom: 30px;
+}
+
+.article-image img {
+width: 100%;
+height: auto;
+max-width: 500px;
+display: block;
+object-fit: cover;
+}
+
+.article-content {
+padding: 20px;
+}
+
+.article-title {
+font-size: 24px;
+font-weight: bold;
+color: #333;
+margin: 0 0 15px 0;
+}
+
+.article-text {
+font-size: 16px;
+line-height: 1.5;
+color: #666;
+margin: 0;
+}
+
+.continue-reading {
+background-color: #4a7c59;
+color: white;
+padding: 2px 8px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.article-footer {
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+.read-more-button {
+background-color: #4a7c59;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 12px 30px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+background-color: #3d6649;
+}
+
+@media (min-width: 768px) {
+.food-article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-image {
+    flex: 0 0 40%;
+}
+
+.article-content {
+    flex: 0 0 60%;
+}
+
+.article-footer {
+    flex: 0 0 100%;
+}
+}

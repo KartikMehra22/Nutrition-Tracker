@@ -1,6 +1,6 @@
 import "./MainContent.css"
-import AvocadoImage from "./AvocadoImage"
-import FoodArticle from "./FoodArticle"
+import AvacadoImage from "./AvacadoImage"
+import FoodArticles from "./FoodArticles"
 
 function MainContent() {
 return (
@@ -12,7 +12,7 @@ return (
         <p className="hero-description">Explore, Monitor, and Indulge in Healthful Eating Habits</p>
     </div>
     <div className="hero-image">
-        <AvocadoImage />
+        <AvacadoImage />
     </div>
     </section>
 
@@ -28,7 +28,7 @@ return (
     </section>
 
     <section className="articles-section">
-    <FoodArticle />
+    <FoodArticles />
     </section>
 </main>
 )

@@ -1,0 +1,173 @@
+.footer {
+background-color: white;
+padding: 50px 0 20px;
+border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.footer-section {
+flex: 1;
+min-width: 250px;
+margin-bottom: 30px;
+}
+
+.footer-logo {
+font-size: 32px;
+font-weight: bold;
+color: #4a7c59;
+margin-bottom: 20px;
+font-style: italic;
+}
+
+.contact-info p {
+margin: 10px 0;
+color: #666;
+font-size: 14px;
+}
+
+.social-links h3,
+.footer-section h3 {
+font-size: 18px;
+margin-bottom: 15px;
+color: #333;
+}
+
+.social-icons {
+display: flex;
+gap: 10px;
+}
+
+.social-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 30px;
+height: 30px;
+background-color: #f0f0f0;
+border-radius: 50%;
+color: #666;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+background-color: #4a7c59;
+color: white;
+}
+
+.footer-links {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer-links li {
+margin-bottom: 10px;
+}
+
+.footer-links a {
+color: #666;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-links a:hover {
+color: #4a7c59;
+}
+
+.app-buttons {
+display: flex;
+gap: 10px;
+margin: 15px 0;
+}
+
+.app-button {
+display: flex;
+align-items: center;
+padding: 8px 12px;
+border: 1px solid #e0e0e0;
+border-radius: 5px;
+text-decoration: none;
+color: #333;
+transition: background-color 0.3s;
+}
+
+.app-button:hover {
+background-color: #f5f5f5;
+}
+
+.app-icon {
+font-size: 24px;
+margin-right: 8px;
+}
+
+.app-text {
+font-size: 12px;
+line-height: 1.2;
+}
+
+.payment-methods {
+display: flex;
+gap: 10px;
+margin-top: 15px;
+}
+
+.payment-icon {
+display: inline-block;
+width: 40px;
+height: 25px;
+background-color: #f0f0f0;
+border-radius: 3px;
+font-size: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #666;
+}
+
+.visa {
+background-color: #f0f0f0;
+color: #1a1f71;
+}
+
+.mastercard {
+background-color: #f0f0f0;
+color: #eb001b;
+}
+
+.maestro {
+background-color: #f0f0f0;
+color: #0099df;
+}
+
+.amex {
+background-color: #f0f0f0;
+color: #006fcf;
+}
+
+.copyright {
+text-align: center;
+margin-top: 30px;
+padding-top: 20px;
+border-top: 1px solid #e0e0e0;
+color: #999;
+font-size: 14px;
+}
+
+@media (max-width: 768px) {
+.footer-container {
+    flex-direction: column;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+}
