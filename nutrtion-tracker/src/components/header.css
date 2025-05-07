@@ -1,93 +1,93 @@
 .header {
-background-color: #f0f0f0;
-width: 100%;
-padding: 15px 0;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logoText {
-font-size: 2rem;
-font-weight: bold;
-color: #4caf50;
-font-family: "Arial", sans-serif;
-font-style: italic;
-cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4caf50;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  cursor: pointer;
 }
 
 .nav {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navList {
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-gap: 30px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
 }
 
 .navItem {
-display: flex;
+  display: flex;
 }
 
 .navLink {
-text-decoration: none;
-color: #333;
-font-size: 1rem;
-font-weight: 500;
-padding: 8px 16px;
-border-radius: 8px;
-transition: all 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .navLink:hover {
-color: #4caf50;
+  color: #4caf50;
 }
 
 .active {
-background-color: #8bdb8f;
-color: #000;
+  background-color: #8bdb8f;
+  color: #000;
 }
 
 .active:hover {
-color: #000;
+  color: #000;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-.container {
+  .container {
     flex-direction: column;
     gap: 15px;
-}
+  }
 
-.navList {
+  .navList {
     gap: 10px;
-}
+  }
 
-.navLink {
+  .navLink {
     padding: 6px 12px;
     font-size: 0.9rem;
-}
+  }
 }
 
 @media (max-width: 480px) {
-.navList {
+  .navList {
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 }

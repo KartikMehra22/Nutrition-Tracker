@@ -32,6 +32,11 @@ return (
             User
             </Link>
         </li>
+        <li className="navItem">
+            <Link to="/login" className="navLink">
+            Login
+            </Link>
+        </li>
         </ul>
 
     </nav>

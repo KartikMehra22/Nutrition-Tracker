@@ -1,32 +1,45 @@
 import './App.css'
-import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import {createBrowserRouter,RouterProvider} from 'react-router'
 import Register from './components/Register'
 import Login from './components/Login'
 import Notfound from './components/Notfound'
 import Track from './components/Track'
 import React from "react"
 
-import Header from './components/header'
-import UserDashboard from './components/user'
+import Home from './routes/Home'
+import Add from "./routes/Add"
+import Blogs from "./routes/Blogs"
+import User from './routes/User'
+import Sign from './routes/Sign'
 
 function App() {
-  
+  const route = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home/>
+    },
+    {
+      path: "/add",
+      element: <Add/>
+    },
+    {
+      path: "/blogs",
+      element: <Blogs/>
+    },
+    {
+      path: "/user",
+      element: <User/>
+    },
+    {
+      path: "/login",
+      element: <Sign/>
+    }
+  ])
 
   return (
     <>
     
-    <BrowserRouter>
-    <Header/>
-
-    <Routes>
-      <Route path='/' element={<Login/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/register' element={<Register/>}/>
-      <Route path='/track' element={<Track/>}/>
-      <Route path='*' element={<Notfound/>}/>
-    </Routes>
-    
-    </BrowserRouter>
+    <RouterProvider router={route}/>
 
     </>
   )
