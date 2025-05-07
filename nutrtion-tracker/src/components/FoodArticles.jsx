@@ -5,7 +5,7 @@ return (
 <article className="food-article">
     <div className="article-image">
     <img
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-05-07%20at%2011.29.09%E2%80%AFAM-SMNteCyIuTDPvpjHuACiRBERDnSfbD.png"
+        src="https://www.shape.com/thmb/Nti_HBKTZCavOIQkCKRJS2sx9W8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_1069332170-2000-364c5bccbb1e4e2a83a0e4cfdc15723a.jpg"
         alt="Healthy meal with shrimp and vegetables"
     />
     </div>
