@@ -1,0 +1,81 @@
+.nutrition-summary {
+background-color: #f0f0f0;
+border-radius: 12px;
+padding: 20px;
+margin-bottom: 30px;
+}
+
+.summary-header {
+margin-bottom: 20px;
+}
+
+.summary-title {
+color: #4a7c59;
+font-size: 28px;
+margin: 0;
+}
+
+.nutrition-metrics {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.metric {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 80px;
+}
+
+.metric-icon {
+margin-bottom: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+}
+
+.metric-label {
+font-size: 14px;
+color: #666;
+margin-bottom: 5px;
+text-align: center;
+}
+
+.metric-value {
+font-weight: 500;
+color: #333;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.nutrition-metrics {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.metric {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.metric-icon {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.metric-label {
+    margin-bottom: 0;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.metric-value {
+    text-align: right;
+    margin-left: auto;
+}
+}
