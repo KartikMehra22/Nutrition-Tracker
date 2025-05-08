@@ -1,10 +1,13 @@
 import React from 'react'
-import UserDashboard from '../components/user'
+import UserDashboard from '../components/UserDashboard'
+import Header from '../components/header'
+import NutritionSummary from '../components/NutritionSummary'
 
 function User() {
   return (
     <div>
-      <UserDashboard/>
+        <Header/>
+        <UserDashboard/>
     </div>
   )
 }
