@@ -1,48 +1,45 @@
-import './App.css'
-import {createBrowserRouter,RouterProvider} from 'react-router'
-import Register from './components/Register'
-import Login from './components/Login'
-import Notfound from './components/Notfound'
-import Track from './components/Track'
-import React from "react"
+// App.jsx
+import './App.css';
+import React from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom';
 
-import Home from './routes/Home'
-import Add from "./routes/Add"
-import Blogs from "./routes/Blogs"
-import User from './routes/User'
-import Sign from './routes/Sign'
+import Home from './routes/Home';
+import Add from './routes/Add';
+import Blogs from './routes/Blogs';
+import User from './routes/User';
+import Sign from './routes/Sign';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/add',
+    element: <Add />
+  },
+  {
+    path: '/blogs',
+    element: <Blogs />
+  },
+  {
+    path: '/user',
+    element: <User />
+  },
+  {
+    path: '/login',
+    element: <Sign />
+  }
+]);
 
 function App() {
-  const route = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home/>
-    },
-    {
-      path: "/add",
-      element: <Add/>
-    },
-    {
-      path: "/blogs",
-      element: <Blogs/>
-    },
-    {
-      path: "/user",
-      element: <User/>
-    },
-    {
-      path: "/login",
-      element: <Sign/>
-    }
-  ])
-
   return (
-    <>
-    
-    <RouterProvider router={route}/>
-
-    </>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
+

@@ -7,8 +7,45 @@ flex-direction: column;
 align-items: center;
 }
 
+.header {
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.logo {
+color: #4caf50;
+font-size: 28px;
+font-weight: bold;
+}
+
+.logout-btn {
+background-color: transparent;
+color: #4caf50;
+border: 1px solid #4caf50;
+border-radius: 4px;
+padding: 8px 16px;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.logout-btn:hover {
+background-color: #4caf50;
+color: white;
+}
+
 @media (max-width: 768px) {
 .food-search-container {
     padding: 15px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
 }
 }

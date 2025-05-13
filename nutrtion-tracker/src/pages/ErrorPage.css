@@ -1,0 +1,116 @@
+.error-container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+padding: 20px;
+}
+
+.error-content {
+max-width: 500px;
+text-align: center;
+background-color: white;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+padding: 50px 40px;
+animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.error-icon {
+margin-bottom: 30px;
+animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.05);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+.error-title {
+font-size: 28px;
+color: #333;
+margin-bottom: 15px;
+font-weight: 600;
+}
+
+.error-message {
+color: #757575;
+margin-bottom: 30px;
+line-height: 1.6;
+font-size: 16px;
+}
+
+.error-actions {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.error-btn {
+padding: 12px 24px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+}
+
+.error-btn.primary {
+background-color: #4caf50;
+color: white;
+border: none;
+}
+
+.error-btn.primary:hover {
+background-color: #388e3c;
+transform: translateY(-2px);
+}
+
+.error-btn.secondary {
+background-color: white;
+color: #4caf50;
+border: 1px solid #4caf50;
+}
+
+.error-btn.secondary:hover {
+background-color: #f1f8e9;
+transform: translateY(-2px);
+}
+
+.error-btn:active {
+transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+.error-content {
+    padding: 40px 20px;
+}
+
+.error-actions {
+    flex-direction: column;
+}
+
+.error-btn {
+    width: 100%;
+}
+}
