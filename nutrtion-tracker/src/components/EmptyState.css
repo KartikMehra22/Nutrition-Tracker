@@ -12,11 +12,25 @@ margin: 0 auto;
 .illustration {
 max-width: 400px;
 margin-bottom: 30px;
+animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0% {
+    transform: translateY(0px);
+}
+50% {
+    transform: translateY(-10px);
+}
+100% {
+    transform: translateY(0px);
+}
 }
 
 .illustration-image {
 width: 100%;
 height: auto;
+border-radius: 12px;
 }
 
 .empty-state-message {

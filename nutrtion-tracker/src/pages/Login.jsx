@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Login.css"
@@ -70,6 +68,7 @@ return (
     <div className="login-header">
         <div className="logo-container">
         <h1 className="logo">Nutrify</h1>
+        <div className="logo-icon">🥗</div>
         </div>
         <h2 className="login-title">Welcome Back</h2>
         <p className="login-subtitle">Sign in to continue your nutrition journey</p>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Login from "../pages/Login.jsx";
 import Register from "../pages/Register.jsx";
+import Profile from "../pages/Profile"
 import ErrorPage from "../pages/ErrorPage.jsx";
 import "../App.css"
 function Sign() {

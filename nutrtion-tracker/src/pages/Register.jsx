@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Register.css"
@@ -82,6 +80,7 @@ return (
     <div className="register-header">
         <div className="logo-container">
         <h1 className="logo">Nutrify</h1>
+        <div className="logo-icon">🥗</div>
         </div>
         <h2 className="register-title">Create an Account</h2>
         <p className="register-subtitle">Join Nutrify to track your nutrition journey</p>
@@ -280,4 +279,5 @@ return (
 }
 
 export default Register
+
 
