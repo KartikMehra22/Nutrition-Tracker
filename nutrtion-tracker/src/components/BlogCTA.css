@@ -1,5 +1,5 @@
 .blog-cta {
-background-color: #6ab77e;
+background-color: rgb(59, 94, 190);
 border-radius: 15px;
 padding: 30px;
 display: flex;
@@ -33,7 +33,7 @@ font-weight: bold;
 
 .cta-button {
 background-color: white;
-color: #6ab77e;
+color: rgb(59, 94, 190);
 border: none;
 border-radius: 5px;
 padding: 12px 30px;

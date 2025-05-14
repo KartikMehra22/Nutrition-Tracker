@@ -33,7 +33,7 @@ margin: 0;
 }
 
 .continue-reading {
-background-color: #4a7c59;
+background-color: rgb(59, 94, 190);
 color: white;
 padding: 2px 8px;
 border-radius: 4px;
@@ -47,7 +47,7 @@ justify-content: center;
 }
 
 .read-more-button {
-background-color: #4a7c59;
+background-color: rgb(27, 44, 151);
 color: white;
 border: none;
 border-radius: 5px;
@@ -59,7 +59,7 @@ transition: background-color 0.3s;
 }
 
 .read-more-button:hover {
-background-color: #3d6649;
+background-color: #677eda;
 }
 
 @media (min-width: 768px) {

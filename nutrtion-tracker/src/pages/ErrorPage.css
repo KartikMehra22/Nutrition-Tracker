@@ -76,7 +76,7 @@ text-decoration: none;
 }
 
 .error-btn.primary {
-background-color: #4caf50;
+background-color: rgb(59, 94, 190);
 color: white;
 border: none;
 }
@@ -88,8 +88,8 @@ transform: translateY(-2px);
 
 .error-btn.secondary {
 background-color: white;
-color: #4caf50;
-border: 1px solid #4caf50;
+color:rgb(59, 94, 190);
+border: 1px solid rgb(59, 94, 190);
 }
 
 .error-btn.secondary:hover {

@@ -4,7 +4,7 @@ margin: 0 auto;
 padding: 40px 20px;
 }
 
-/* Hero Section */
+
 .hero-section {
 display: flex;
 justify-content: space-between;
@@ -17,9 +17,9 @@ flex: 1;
 }
 
 .hero-title {
-font-size: 36px;
+font-size: 35px;
 font-weight: bold;
-color: #4a7c59;
+color: rgb(59, 94, 190);
 margin: 0 0 20px 0;
 }
 
@@ -41,7 +41,6 @@ display: flex;
 justify-content: flex-end;
 }
 
-/* Progress Section */
 .progress-section {
 background-color: #7b7fc9;
 border-radius: 15px;
@@ -89,8 +88,6 @@ transition: background-color 0.3s;
 .view-button:hover {
 background-color: #f0f0f0;
 }
-
-/* Articles Section */
 .articles-section {
 margin-top: 40px;
 }
